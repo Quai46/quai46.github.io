@@ -3,23 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Collection — QUAI 46</title>
-<meta name="description" content="Drop 01 : six T-shirts minimalistes conçus à Genève. Bientôt disponibles.">
+<title>Collection Drop 01 — QUAI 46</title>
+<meta name="description" content="Drop 01 : six T-shirts en coton biologique, blanc cassé, noir et gris pierre. Éditions numérotées, tailles XS à XL. Conçus à Genève.">
 <meta name="theme-color" content="#f6f4ef">
 <link rel="canonical" href="https://quai46.github.io/collection.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="QUAI 46">
 <meta property="og:locale" content="fr_CH">
-<meta property="og:title" content="Collection — QUAI 46">
-<meta property="og:description" content="Drop 01 : six T-shirts minimalistes conçus à Genève. Bientôt disponibles.">
+<meta property="og:title" content="Collection Drop 01 — QUAI 46">
+<meta property="og:description" content="Drop 01 : six T-shirts en coton biologique, blanc cassé, noir et gris pierre. Éditions numérotées, tailles XS à XL. Conçus à Genève.">
 <meta property="og:url" content="https://quai46.github.io/collection.html">
 <meta property="og:image" content="https://quai46.github.io/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="QUAI 46 — Genève. Vêtements minimalistes.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Collection — QUAI 46">
-<meta name="twitter:description" content="Drop 01 : six T-shirts minimalistes conçus à Genève. Bientôt disponibles.">
+<meta name="twitter:title" content="Collection Drop 01 — QUAI 46">
+<meta name="twitter:description" content="Drop 01 : six T-shirts en coton biologique, blanc cassé, noir et gris pierre. Éditions numérotées, tailles XS à XL. Conçus à Genève.">
 <meta name="twitter:image" content="https://quai46.github.io/assets/og-image.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
@@ -53,51 +53,205 @@
 
 <section class="page-head">
   <div class="container">
-    <p class="eyebrow">Drop 01 — Hiver 2026</p>
+    <p class="eyebrow">Drop 01 — Hiver 2026<!-- TODO: confirmer la saison / date du drop --></p>
     <h1>Collection</h1>
-    <p>Six T-shirts, trois couleurs, une seule exigence : l’essentiel, parfaitement exécuté. Conçus à Genève.</p>
+    <p>Six T-shirts, trois couleurs — blanc cassé, noir, gris pierre — en deux coupes. Chaque pièce est numérotée. Conçus à Genève.</p>
   </div>
 </section>
 
-<section class="section section--tight">
+<section class="section section--tight" aria-label="Produits du Drop 01">
   <div class="container">
-    <div class="grid">
-      <article class="product reveal">
-        <div class="frame"><img src="/images/tee-01.svg" alt="T-shirt Léman" width="800" height="1000" loading="lazy" decoding="async"></div>
-        <div class="product-info"><h2 class="product-name">Léman</h2><span class="product-price">CHF 95.–</span></div>
-        <p class="product-meta">Coton biologique 240 g · Blanc cassé</p>
-        <button class="btn btn--disabled" type="button" disabled>Bientôt disponible</button>
+    <div class="grid grid--products">
+      <article class="product reveal" id="leman" aria-labelledby="leman-name">
+        <div class="frame">
+          <!-- TODO: photo produit — remplacer par /assets/products/leman.jpg (4:5, ex. 1600×2000, < 250 Ko) -->
+          <img src="/assets/products/leman.svg" alt="T-shirt Léman en blanc cassé, coupe droite, vu de face" width="800" height="1000" loading="lazy" decoding="async">
+        </div>
+        <p class="product-num">N° 01 · Édition numérotée</p>
+        <div class="product-info">
+          <h2 class="product-name" id="leman-name">Léman</h2>
+          <span class="product-price">CHF 95.–<!-- TODO: confirmer le prix de Léman --></span>
+        </div>
+        <p class="product-meta">Blanc cassé · Coupe droite</p>
+        <dl class="specs">
+          <dt>Matière</dt><dd>Coton biologique, 220 g/m²<!-- TODO: confirmer composition, certification (GOTS ?) et grammage --></dd>
+          <dt>Origine</dt><dd>Confectionné au Portugal<!-- TODO: confirmer le pays de confection --></dd>
+          <dt>Édition</dt><dd>146 exemplaires numérotés<!-- TODO: confirmer le nombre d'exemplaires --></dd>
+          <dt>Tailles</dt><dd><ul class="sizes" aria-label="Tailles disponibles"><li>XS</li><li>S</li><li>M</li><li>L</li><li>XL</li></ul></dd>
+        </dl>
+        <a class="btn btn--ghost" href="#liste" aria-describedby="leman-name">Rejoindre la liste</a>
       </article>
-      <article class="product reveal">
-        <div class="frame"><img src="/images/tee-02.svg" alt="T-shirt Jet d’Eau" width="800" height="1000" loading="lazy" decoding="async"></div>
-        <div class="product-info"><h2 class="product-name">Jet d’Eau</h2><span class="product-price">CHF 95.–</span></div>
-        <p class="product-meta">Coton biologique 240 g · Blanc</p>
-        <button class="btn btn--disabled" type="button" disabled>Bientôt disponible</button>
+      <article class="product reveal" id="paquis" aria-labelledby="paquis-name">
+        <div class="frame">
+          <!-- TODO: photo produit — remplacer par /assets/products/paquis.jpg (4:5, ex. 1600×2000, < 250 Ko) -->
+          <img src="/assets/products/paquis.svg" alt="T-shirt Pâquis en noir, coupe droite, vu de face" width="800" height="1000" loading="lazy" decoding="async">
+        </div>
+        <p class="product-num">N° 02 · Édition numérotée</p>
+        <div class="product-info">
+          <h2 class="product-name" id="paquis-name">Pâquis</h2>
+          <span class="product-price">CHF 95.–<!-- TODO: confirmer le prix de Pâquis --></span>
+        </div>
+        <p class="product-meta">Noir · Coupe droite</p>
+        <dl class="specs">
+          <dt>Matière</dt><dd>Coton biologique, 220 g/m²<!-- TODO: confirmer composition, certification (GOTS ?) et grammage --></dd>
+          <dt>Origine</dt><dd>Confectionné au Portugal<!-- TODO: confirmer le pays de confection --></dd>
+          <dt>Édition</dt><dd>146 exemplaires numérotés<!-- TODO: confirmer le nombre d'exemplaires --></dd>
+          <dt>Tailles</dt><dd><ul class="sizes" aria-label="Tailles disponibles"><li>XS</li><li>S</li><li>M</li><li>L</li><li>XL</li></ul></dd>
+        </dl>
+        <a class="btn btn--ghost" href="#liste" aria-describedby="paquis-name">Rejoindre la liste</a>
       </article>
-      <article class="product reveal">
-        <div class="frame"><img src="/images/tee-03.svg" alt="T-shirt Pâquis" width="800" height="1000" loading="lazy" decoding="async"></div>
-        <div class="product-info"><h2 class="product-name">Pâquis</h2><span class="product-price">CHF 95.–</span></div>
-        <p class="product-meta">Coton biologique 240 g · Noir</p>
-        <button class="btn btn--disabled" type="button" disabled>Bientôt disponible</button>
+      <article class="product reveal" id="molard" aria-labelledby="molard-name">
+        <div class="frame">
+          <!-- TODO: photo produit — remplacer par /assets/products/molard.jpg (4:5, ex. 1600×2000, < 250 Ko) -->
+          <img src="/assets/products/molard.svg" alt="T-shirt Molard en gris pierre, coupe droite, vu de face" width="800" height="1000" loading="lazy" decoding="async">
+        </div>
+        <p class="product-num">N° 03 · Édition numérotée</p>
+        <div class="product-info">
+          <h2 class="product-name" id="molard-name">Molard</h2>
+          <span class="product-price">CHF 95.–<!-- TODO: confirmer le prix de Molard --></span>
+        </div>
+        <p class="product-meta">Gris pierre · Coupe droite</p>
+        <dl class="specs">
+          <dt>Matière</dt><dd>Coton biologique, 220 g/m²<!-- TODO: confirmer composition, certification (GOTS ?) et grammage --></dd>
+          <dt>Origine</dt><dd>Confectionné au Portugal<!-- TODO: confirmer le pays de confection --></dd>
+          <dt>Édition</dt><dd>146 exemplaires numérotés<!-- TODO: confirmer le nombre d'exemplaires --></dd>
+          <dt>Tailles</dt><dd><ul class="sizes" aria-label="Tailles disponibles"><li>XS</li><li>S</li><li>M</li><li>L</li><li>XL</li></ul></dd>
+        </dl>
+        <a class="btn btn--ghost" href="#liste" aria-describedby="molard-name">Rejoindre la liste</a>
       </article>
-      <article class="product reveal">
-        <div class="frame"><img src="/images/tee-04.svg" alt="T-shirt Molard" width="800" height="1000" loading="lazy" decoding="async"></div>
-        <div class="product-info"><h2 class="product-name">Molard</h2><span class="product-price">CHF 110.–</span></div>
-        <p class="product-meta">Coton biologique 260 g · Gris pierre</p>
-        <button class="btn btn--disabled" type="button" disabled>Bientôt disponible</button>
+      <article class="product reveal" id="jet-deau" aria-labelledby="jet-deau-name">
+        <div class="frame">
+          <!-- TODO: photo produit — remplacer par /assets/products/jet-deau.jpg (4:5, ex. 1600×2000, < 250 Ko) -->
+          <img src="/assets/products/jet-deau.svg" alt="T-shirt Jet d’Eau en blanc cassé, coupe structurée, vu de face" width="800" height="1000" loading="lazy" decoding="async">
+        </div>
+        <p class="product-num">N° 04 · Édition numérotée</p>
+        <div class="product-info">
+          <h2 class="product-name" id="jet-deau-name">Jet d’Eau</h2>
+          <span class="product-price">CHF 125.–<!-- TODO: confirmer le prix de Jet d’Eau --></span>
+        </div>
+        <p class="product-meta">Blanc cassé · Coupe structurée</p>
+        <dl class="specs">
+          <dt>Matière</dt><dd>Coton biologique, 280 g/m²<!-- TODO: confirmer composition, certification (GOTS ?) et grammage --></dd>
+          <dt>Origine</dt><dd>Confectionné au Portugal<!-- TODO: confirmer le pays de confection --></dd>
+          <dt>Édition</dt><dd>146 exemplaires numérotés<!-- TODO: confirmer le nombre d'exemplaires --></dd>
+          <dt>Tailles</dt><dd><ul class="sizes" aria-label="Tailles disponibles"><li>XS</li><li>S</li><li>M</li><li>L</li><li>XL</li></ul></dd>
+        </dl>
+        <a class="btn btn--ghost" href="#liste" aria-describedby="jet-deau-name">Rejoindre la liste</a>
       </article>
-      <article class="product reveal">
-        <div class="frame"><img src="/images/tee-05.svg" alt="T-shirt Salève" width="800" height="1000" loading="lazy" decoding="async"></div>
-        <div class="product-info"><h2 class="product-name">Salève</h2><span class="product-price">CHF 110.–</span></div>
-        <p class="product-meta">Coton biologique 260 g · Anthracite</p>
-        <button class="btn btn--disabled" type="button" disabled>Bientôt disponible</button>
+      <article class="product reveal" id="bise" aria-labelledby="bise-name">
+        <div class="frame">
+          <!-- TODO: photo produit — remplacer par /assets/products/bise.jpg (4:5, ex. 1600×2000, < 250 Ko) -->
+          <img src="/assets/products/bise.svg" alt="T-shirt Bise en noir, coupe structurée, vu de face" width="800" height="1000" loading="lazy" decoding="async">
+        </div>
+        <p class="product-num">N° 05 · Édition numérotée</p>
+        <div class="product-info">
+          <h2 class="product-name" id="bise-name">Bise</h2>
+          <span class="product-price">CHF 125.–<!-- TODO: confirmer le prix de Bise --></span>
+        </div>
+        <p class="product-meta">Noir · Coupe structurée</p>
+        <dl class="specs">
+          <dt>Matière</dt><dd>Coton biologique, 280 g/m²<!-- TODO: confirmer composition, certification (GOTS ?) et grammage --></dd>
+          <dt>Origine</dt><dd>Confectionné au Portugal<!-- TODO: confirmer le pays de confection --></dd>
+          <dt>Édition</dt><dd>146 exemplaires numérotés<!-- TODO: confirmer le nombre d'exemplaires --></dd>
+          <dt>Tailles</dt><dd><ul class="sizes" aria-label="Tailles disponibles"><li>XS</li><li>S</li><li>M</li><li>L</li><li>XL</li></ul></dd>
+        </dl>
+        <a class="btn btn--ghost" href="#liste" aria-describedby="bise-name">Rejoindre la liste</a>
       </article>
-      <article class="product reveal">
-        <div class="frame"><img src="/images/tee-06.svg" alt="T-shirt Bise" width="800" height="1000" loading="lazy" decoding="async"></div>
-        <div class="product-info"><h2 class="product-name">Bise</h2><span class="product-price">CHF 135.–</span></div>
-        <p class="product-meta">Coton Pima 200 g · Écru</p>
-        <button class="btn btn--disabled" type="button" disabled>Bientôt disponible</button>
+      <article class="product reveal" id="saleve" aria-labelledby="saleve-name">
+        <div class="frame">
+          <!-- TODO: photo produit — remplacer par /assets/products/saleve.jpg (4:5, ex. 1600×2000, < 250 Ko) -->
+          <img src="/assets/products/saleve.svg" alt="T-shirt Salève en gris pierre, coupe structurée, vu de face" width="800" height="1000" loading="lazy" decoding="async">
+        </div>
+        <p class="product-num">N° 06 · Édition numérotée</p>
+        <div class="product-info">
+          <h2 class="product-name" id="saleve-name">Salève</h2>
+          <span class="product-price">CHF 125.–<!-- TODO: confirmer le prix de Salève --></span>
+        </div>
+        <p class="product-meta">Gris pierre · Coupe structurée</p>
+        <dl class="specs">
+          <dt>Matière</dt><dd>Coton biologique, 280 g/m²<!-- TODO: confirmer composition, certification (GOTS ?) et grammage --></dd>
+          <dt>Origine</dt><dd>Confectionné au Portugal<!-- TODO: confirmer le pays de confection --></dd>
+          <dt>Édition</dt><dd>146 exemplaires numérotés<!-- TODO: confirmer le nombre d'exemplaires --></dd>
+          <dt>Tailles</dt><dd><ul class="sizes" aria-label="Tailles disponibles"><li>XS</li><li>S</li><li>M</li><li>L</li><li>XL</li></ul></dd>
+        </dl>
+        <a class="btn btn--ghost" href="#liste" aria-describedby="saleve-name">Rejoindre la liste</a>
       </article>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="section" id="guide-des-tailles" aria-labelledby="guide-title">
+  <div class="container split split--top">
+    <div class="reveal">
+      <p class="eyebrow">Guide des tailles</p>
+      <h2 class="h-display" id="guide-title">Trouver la bonne taille.</h2>
+      <p class="muted measure">Mesures du vêtement à plat, en centimètres (± 1 cm). La coupe droite est près du corps ; la coupe structurée tombe plus ample, avec une épaule légèrement descendue. Entre deux tailles, choisissez la plus petite pour la coupe structurée.<!-- TODO: remplacer par les mesures réelles du fabricant --></p>
+    </div>
+    <div class="reveal">
+      <div class="table-wrap" role="region" aria-labelledby="sizes-1" tabindex="0">
+        <table class="size-table">
+          <caption id="sizes-1">Coupe droite <span>— Léman, Pâquis, Molard</span></caption>
+          <thead><tr><th scope="col">Taille</th><th scope="col">Largeur poitrine</th><th scope="col">Longueur</th><th scope="col">Manche</th></tr></thead>
+          <tbody><tr><th scope="row">XS</th><td>47</td><td>67</td><td>19</td></tr><tr><th scope="row">S</th><td>50</td><td>69</td><td>20</td></tr><tr><th scope="row">M</th><td>53</td><td>71</td><td>21</td></tr><tr><th scope="row">L</th><td>56</td><td>73</td><td>22</td></tr><tr><th scope="row">XL</th><td>59</td><td>75</td><td>23</td></tr></tbody>
+        </table>
+      </div>
+      <div class="table-wrap" role="region" aria-labelledby="sizes-2" tabindex="0">
+        <table class="size-table">
+          <caption id="sizes-2">Coupe structurée <span>— Jet d’Eau, Bise, Salève</span></caption>
+          <thead><tr><th scope="col">Taille</th><th scope="col">Largeur poitrine</th><th scope="col">Longueur</th><th scope="col">Manche</th></tr></thead>
+          <tbody><tr><th scope="row">XS</th><td>51</td><td>66</td><td>21</td></tr><tr><th scope="row">S</th><td>54</td><td>68</td><td>22</td></tr><tr><th scope="row">M</th><td>57</td><td>70</td><td>23</td></tr><tr><th scope="row">L</th><td>60</td><td>72</td><td>24</td></tr><tr><th scope="row">XL</th><td>63</td><td>74</td><td>25</td></tr></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="section" id="livraison-retours" aria-labelledby="ship-title">
+  <div class="container">
+    <p class="eyebrow">Service</p>
+    <h2 class="h-display" id="ship-title">Livraison &amp; retours</h2>
+    <div class="pillars pillars--flush">
+      <div class="pillar reveal"><h3>Livraison</h3><p>En Suisse et au Liechtenstein, sous 1 à 3 jours ouvrables. CHF 9.–, offerte dès CHF 150.–.<!-- TODO: confirmer zones, délais et frais (identiques aux CGV) --></p></div>
+      <div class="pillar reveal"><h3>Retours sous 14 jours</h3><p>Article non porté, avec ses étiquettes : retour possible 14 jours après réception, remboursement sous 14 jours.</p></div>
+      <div class="pillar reveal"><h3>Garantie</h3><p>Garantie légale de 2 ans sur les défauts. Nous répondons à chaque demande sous 48 heures.</p></div>
+    </div>
+    <p class="more-link"><a href="/cgv.html">Lire les conditions générales de vente</a></p>
+  </div>
+</section>
+
+<hr class="rule">
+
+<section class="section" id="liste" aria-labelledby="liste-title">
+  <div class="container statement reveal">
+    <p class="eyebrow">Bientôt disponible</p>
+    <h2 id="liste-title">Être prévenu à l’ouverture du drop.</h2>
+    <p>Les inscrits sont informés en premier, avant l’ouverture publique.</p>
+    <div class="waitlist-center">
+      <form class="waitlist" id="coll-liste" data-form="waitlist" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
+        <!-- TODO: remplacer FORMSPREE_ID par l'identifiant du formulaire Formspree (ex. « xyzabcd ») — voir INFORME.md -->
+        <label class="eyebrow" for="coll-email">Premier drop — liste d’attente</label>
+        <div class="waitlist-row">
+          <input class="field" id="coll-email" type="email" name="email" autocomplete="email" inputmode="email" required
+                 placeholder="Votre adresse email" aria-describedby="coll-email-hint coll-email-error">
+          <button class="btn" type="submit">S’inscrire</button>
+        </div>
+        <p class="field-error" id="coll-email-error" hidden></p>
+        <div class="consent">
+          <input type="checkbox" id="coll-consent" name="consentement" value="oui" required aria-describedby="coll-consent-error">
+          <label for="coll-consent">J’accepte de recevoir les emails de QUAI 46 sur ses drops. Désinscription en un clic. Voir notre <a href="/confidentialite.html">politique de confidentialité</a>.</label>
+        </div>
+        <p class="field-error" id="coll-consent-error" hidden></p>
+        <div class="hp" aria-hidden="true"><label for="coll-website">Ne pas remplir ce champ</label><input type="text" id="coll-website" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="_subject" value="Liste d’attente — QUAI 46">
+        <input type="hidden" name="formulaire" value="liste-attente">
+        <input type="hidden" name="langue" value="fr">
+        <p class="form-hint" id="coll-email-hint">Soyez les premiers informés. Jamais de spam.</p>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </div>
 </section>

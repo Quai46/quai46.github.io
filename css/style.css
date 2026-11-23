@@ -489,6 +489,63 @@ textarea.field { resize: vertical; min-height: 8rem; }
   white-space: nowrap;
 }
 .product .btn { width: 100%; }
+.product-num {
+  font-size: 0.6875rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin: 1.25rem 0 0;
+}
+.product-num + .product-info { margin-top: .35rem; }
+.specs {
+  display: grid;
+  grid-template-columns: 5.5rem 1fr;
+  gap: .5rem 1rem;
+  margin: 0 0 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.8125rem;
+}
+.specs dt { color: var(--stone); }
+.specs dd { margin: 0; }
+.sizes { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; }
+.sizes li {
+  min-width: 2rem;
+  padding: 0 .35rem;
+  border: 1px solid var(--line);
+  text-align: center;
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  line-height: 1.6rem;
+}
+
+/* Guide des tailles */
+.table-wrap { overflow-x: auto; margin-bottom: 2.5rem; }
+.table-wrap:focus-visible { outline-offset: 2px; }
+.size-table { width: 100%; border-collapse: collapse; font-size: 0.8125rem; min-width: 20rem; }
+.size-table caption {
+  text-align: left;
+  font-family: var(--serif);
+  font-size: 1.375rem;
+  padding-bottom: 1rem;
+}
+.size-table caption span { color: var(--stone); font-size: 1rem; font-style: italic; }
+.size-table th, .size-table td { padding: .7rem .5rem; border-bottom: 1px solid var(--line); text-align: left; font-weight: 300; }
+.size-table thead th {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--stone);
+  border-bottom-color: var(--stone-light);
+}
+.size-table tbody th { font-weight: 400; }
+
+.pillars--flush { margin-top: 1rem; }
+.more-link { margin: 3rem 0 0; font-size: 0.8125rem; }
+.more-link a { border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
+.more-link a:hover { color: var(--stone); border-color: var(--stone); }
+.waitlist-center { max-width: 26rem; margin: 2.5rem auto 0; text-align: left; }
 
 /* ---------- About ---------- */
 
@@ -681,6 +738,7 @@ textarea.field { resize: vertical; min-height: 8rem; }
   .grid { grid-template-columns: repeat(3, 1fr); gap: 5rem 2rem; }
   .split { grid-template-columns: 1fr 1fr; gap: 6rem; }
   .split--reverse > :first-child { order: 2; }
+  .split--top { align-items: start; }
   .contact-grid { grid-template-columns: 1fr 1.2fr; gap: 6rem; }
   .footer-grid--4 { grid-template-columns: 1.6fr 1fr 1fr 1.2fr; }
   .page-head { padding: calc(var(--header-h) + 6rem) 0 4rem; }
