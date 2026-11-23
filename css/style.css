@@ -464,6 +464,8 @@ textarea.field { resize: vertical; min-height: 8rem; }
 .page-head p { max-width: 32rem; color: var(--stone); margin-top: 1.5rem; }
 .page-head--center { min-height: 70vh; display: flex; align-items: center; }
 .page-head--center h1 { max-width: 40rem; }
+.page-head--center .split { width: 100%; }
+.nf-visual { display: none; }
 
 /* ---------- Collection ---------- */
 
@@ -739,6 +741,7 @@ textarea.field { resize: vertical; min-height: 8rem; }
   .split { grid-template-columns: 1fr 1fr; gap: 6rem; }
   .split--reverse > :first-child { order: 2; }
   .split--top { align-items: start; }
+  .nf-visual { display: block; max-width: 22rem; margin-left: auto; width: 100%; }
   .contact-grid { grid-template-columns: 1fr 1.2fr; gap: 6rem; }
   .footer-grid--4 { grid-template-columns: 1.6fr 1fr 1fr 1.2fr; }
   .page-head { padding: calc(var(--header-h) + 6rem) 0 4rem; }
