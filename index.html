@@ -59,13 +59,26 @@
       <h1 class="hero-title">QUAI&nbsp;46 <span class="city"><span class="dash">—</span> Genève</span></h1>
       <p class="lead hero-tagline">Des vêtements essentiels, coupés avec une précision suisse. Rien de superflu — seulement ce qui dure.</p>
 
-      <form class="waitlist" data-form="waitlist" action="#" method="post" novalidate>
+      <form class="waitlist" id="hero-liste" data-form="waitlist" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
+        <!-- TODO: remplacer FORMSPREE_ID par l'identifiant du formulaire Formspree (ex. « xyzabcd ») — voir INFORME.md -->
         <label class="eyebrow" for="hero-email">Premier drop — liste d’attente</label>
         <div class="waitlist-row">
-          <input class="field" id="hero-email" type="email" name="email" autocomplete="email" required placeholder="Votre adresse email">
+          <input class="field" id="hero-email" type="email" name="email" autocomplete="email" inputmode="email" required
+                 placeholder="Votre adresse email" aria-describedby="hero-email-hint hero-email-error">
           <button class="btn" type="submit">S’inscrire</button>
         </div>
-        <p class="form-note" role="status" aria-live="polite">Soyez les premiers informés. Jamais de spam.</p>
+        <p class="field-error" id="hero-email-error" hidden></p>
+        <div class="consent">
+          <input type="checkbox" id="hero-consent" name="consentement" value="oui" required aria-describedby="hero-consent-error">
+          <label for="hero-consent">J’accepte de recevoir les emails de QUAI 46 sur ses drops. Désinscription en un clic. Voir notre <a href="/confidentialite.html">politique de confidentialité</a>.</label>
+        </div>
+        <p class="field-error" id="hero-consent-error" hidden></p>
+        <div class="hp" aria-hidden="true"><label for="hero-website">Ne pas remplir ce champ</label><input type="text" id="hero-website" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <input type="hidden" name="_subject" value="Liste d’attente — QUAI 46">
+        <input type="hidden" name="formulaire" value="liste-attente">
+        <input type="hidden" name="langue" value="fr">
+        <p class="form-hint" id="hero-email-hint">Soyez les premiers informés. Jamais de spam.</p>
+        <p class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
 

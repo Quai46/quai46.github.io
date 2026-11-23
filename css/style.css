@@ -10,6 +10,7 @@
   --stone: #8a8780;
   --stone-light: #c9c5bc;
   --line: #dcd8cf;
+  --error: #8c3a2b;
 
   --serif: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
   --sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
@@ -267,13 +268,60 @@ textarea.field { resize: vertical; min-height: 8rem; }
   margin-top: 1.75rem;
 }
 
-.form-note {
+.form-hint {
   font-size: 0.75rem;
   color: var(--stone);
   margin: 1rem 0 0;
   min-height: 1.2em;
 }
-.form-note.is-success { color: var(--ink); }
+.form-status {
+  font-size: 0.8125rem;
+  margin: .75rem 0 0;
+}
+.form-status:empty { display: none; }
+.form-status.is-success { color: var(--ink); }
+.form-status.is-error,
+.field-error { color: var(--error); }
+.field-error { font-size: 0.75rem; margin: .5rem 0 0; }
+.field[aria-invalid="true"] { border-bottom-color: var(--error); }
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: .75rem;
+  margin-top: 1.25rem;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--stone);
+}
+.consent label { cursor: pointer; }
+.consent a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+.consent input {
+  -webkit-appearance: none;
+  appearance: none;
+  flex: none;
+  width: 15px; height: 15px;
+  margin: .2rem 0 0;
+  border: 1px solid var(--stone);
+  border-radius: 0;
+  background: transparent;
+  cursor: pointer;
+  display: grid;
+  place-content: center;
+}
+.consent input::after {
+  content: "";
+  width: 7px; height: 4px;
+  border: solid var(--ivory);
+  border-width: 0 0 1px 1px;
+  transform: rotate(-45deg) translate(1px, -1px);
+  opacity: 0;
+}
+.consent input:checked { background: var(--ink); border-color: var(--ink); }
+.consent input:checked::after { opacity: 1; }
+.consent input[aria-invalid="true"] { border-color: var(--error); }
+
+.hp { position: absolute !important; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 
 /* ---------- Hero ---------- */
 
@@ -314,6 +362,7 @@ textarea.field { resize: vertical; min-height: 8rem; }
 }
 
 .waitlist { max-width: 26rem; }
+.waitlist .form-hint { margin-top: .75rem; }
 .waitlist-row { display: flex; flex-direction: column; gap: 1rem; }
 .waitlist .eyebrow { margin-bottom: .5rem; }
 
