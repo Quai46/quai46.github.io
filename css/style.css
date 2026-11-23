@@ -40,6 +40,7 @@ body {
 }
 
 img { display: block; max-width: 100%; height: auto; }
+figure { margin: 0; }
 a { color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; color: inherit; }
 
@@ -103,6 +104,15 @@ p { margin: 0 0 1.25rem; }
 
 .section { padding: 5rem 0; }
 
+/* Utilitaires */
+.section--flush { padding-top: 0; }
+.section--tight { padding-top: 1rem; }
+.h-display { font-size: clamp(2.25rem, 8vw, 3.5rem); margin-bottom: 1.5rem; }
+.muted { color: var(--stone); }
+.measure { max-width: 24rem; margin-bottom: 2.5rem; }
+.flush { margin-top: 0 !important; }
+.btn-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.5rem; }
+
 .rule {
   border: 0;
   border-top: 1px solid var(--line);
@@ -153,6 +163,7 @@ p { margin: 0 0 1.25rem; }
 }
 .lang-toggle span { transition: color .3s; }
 .lang-toggle span[aria-current="true"] { color: var(--ink); }
+.lang-toggle:hover span { color: var(--ink); }
 .lang-toggle .sep { margin: 0 .35em; color: var(--stone-light); }
 
 .menu-toggle {
@@ -379,6 +390,8 @@ textarea.field { resize: vertical; min-height: 8rem; }
 }
 .page-head h1 { font-size: clamp(2.75rem, 11vw, 5rem); }
 .page-head p { max-width: 32rem; color: var(--stone); margin-top: 1.5rem; }
+.page-head--center { min-height: 70vh; display: flex; align-items: center; }
+.page-head--center h1 { max-width: 40rem; }
 
 /* ---------- Collection ---------- */
 
@@ -421,6 +434,7 @@ textarea.field { resize: vertical; min-height: 8rem; }
   max-width: 44rem;
   margin: 0 auto;
 }
+.quote p { margin: 0; }
 .quote cite {
   display: block;
   font-family: var(--sans);
@@ -504,6 +518,7 @@ textarea.field { resize: vertical; min-height: 8rem; }
   .waitlist-row .field { flex: 1; }
   .pillars { grid-template-columns: repeat(3, 1fr); gap: 2rem; }
   .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+  .footer-grid--4 { grid-template-columns: 1fr 1fr; }
 }
 
 /* ==========================================================================
@@ -549,5 +564,6 @@ textarea.field { resize: vertical; min-height: 8rem; }
   .split { grid-template-columns: 1fr 1fr; gap: 6rem; }
   .split--reverse > :first-child { order: 2; }
   .contact-grid { grid-template-columns: 1fr 1.2fr; gap: 6rem; }
+  .footer-grid--4 { grid-template-columns: 1.6fr 1fr 1fr 1.2fr; }
   .page-head { padding: calc(var(--header-h) + 6rem) 0 4rem; }
 }
