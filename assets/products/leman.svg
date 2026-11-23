@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
 <rect width="800" height="1000" fill="#ece9e2"/>
-<path d="M290 330 L350 300 Q400 330 450 300 L510 330 L570 410 L530 440 L500 410 L500 700 L300 700 L300 410 L270 440 L230 410 Z" fill="#f6f4ef" stroke="#8a8780" stroke-width="1" stroke-linejoin="round"/>
+<path d="M290 330 L350 300 Q400 330 450 300 L510 330 L570 410 L530 440 L500 410 L500 700 L300 700 L300 410 L270 440 L230 410 Z" fill="#f8f6f1" stroke="#8a8780" stroke-width="1" stroke-linejoin="round"/>
 <path d="M350 300 Q400 345 450 300" fill="none" stroke="#8a8780" stroke-width=".8" opacity=".6"/>
 <text x="400" y="900" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#8a8780" text-anchor="middle">N° 01</text>
 </svg>

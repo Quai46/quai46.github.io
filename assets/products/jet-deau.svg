@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<rect width="800" height="1000" fill="#ece9e2"/>
+<path d="M280 335 L350 300 Q400 336 450 300 L520 335 L585 425 L540 452 L512 425 L512 705 L288 705 L288 425 L260 452 L215 425 Z" fill="#f8f6f1" stroke="#8a8780" stroke-width="1" stroke-linejoin="round"/>
+<path d="M350 300 Q400 345 450 300" fill="none" stroke="#8a8780" stroke-width=".8" opacity=".6"/>
+<text x="400" y="900" font-family="Inter, Helvetica, Arial, sans-serif" font-size="13" letter-spacing="4" fill="#8a8780" text-anchor="middle">N° 04</text>
+</svg>
