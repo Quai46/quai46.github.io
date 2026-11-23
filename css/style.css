@@ -30,7 +30,7 @@
   --ivory: #f6f4ef;
   --ivory-deep: #ece9e2;
   --ink: #141413;
-  --stone: #8a8780;
+  --stone: #6c6964;  /* gris pierre (contraste AA 4.97:1 ; ancienne valeur #8a8780 = 3.26:1) */
   --stone-light: #c9c5bc;
   --line: #dcd8cf;
   --error: #8c3a2b;
@@ -705,6 +705,8 @@ textarea.field { resize: vertical; min-height: 8rem; }
   :root { --gutter: 3rem; --header-h: 5rem; }
   body { font-size: 1rem; }
   .section { padding: 8rem 0; }
+  .section--tight { padding-top: 1rem; }
+  .section--flush { padding-top: 0; }
 
   .menu-toggle { display: none; }
   .site-nav {
